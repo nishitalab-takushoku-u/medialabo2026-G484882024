@@ -16,3 +16,28 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 
+function show() {
+
+    // キャンパスの住所を表示
+    let p = document.createElement("p");
+    p.textContent = campus.address;
+
+    let h2 = document.querySelector("h2#addr");
+    h2.insertAdjacentElement("afterend", p);
+
+    // 学科一覧を表示
+    let ul = document.createElement("ul");
+
+    for (let dept of gakka) {
+        let li = document.createElement("li");
+        li.textContent = dept.name;
+        ul.insertAdjacentElement("beforeend", li);
+    }
+
+    h2 = document.querySelector("h2#dept");
+    h2.insertAdjacentElement("afterend", ul);
+}
+
+// ボタンをクリックしたら show() を実行
+let button = document.querySelector("#show");
+button.addEventListener("click", show);
