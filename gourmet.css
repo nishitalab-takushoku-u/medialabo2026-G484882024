@@ -21,11 +21,64 @@ h2 {
     border-radius: 5px;
 }
 
+h2:hover {
+    background-color: #a67c52;
+}
+
+h3 {
+    color: #8b5a2b;
+    border-left: 6px solid #c9a66b;
+    padding-left: 10px;
+}
+
+#search-area {
+    background-color: #fffaf0;
+    border: 2px solid #d2b48c;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #8b5a2b;
+}
+
+select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #d2b48c;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a67c52;
+}
+
+#result {
+    margin-top: 25px;
+}
+
 dl {
     background-color: #fffaf0;
     border: 1px solid #d2b48c;
     padding: 15px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+dl:hover {
+    transform: translateY(-2px);
 }
 
 dt {
@@ -45,6 +98,14 @@ hr {
     border-top: 2px dashed #c9a66b;
 }
 
-h2:hover {
-    background-color: #a67c52;
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#header-image {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
